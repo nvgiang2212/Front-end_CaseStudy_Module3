@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {IMessage} from '../../model/message';
-import {MessageService} from '../../service/message.service';
-import {UserService} from '../../service/user.service';
+import {IMessage} from '../model/message';
+import {MessageService} from '../service/message.service';
+import {UserService} from '../service/user.service';
 
 @Component({
   selector: 'app-new-message',
   templateUrl: './new-message.component.html',
-  styleUrls: ['./new-message.component.css']
+  styleUrls: ['./new-message.component.scss']
 })
 export class NewMessageComponent implements OnInit {
 

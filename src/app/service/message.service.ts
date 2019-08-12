@@ -7,13 +7,12 @@ import * as $ from 'jquery';
 })
 export class MessageService {
   messageList: IMessage[] = [
-    {username: 'Ng Vn Aw', content: 'I have seen that, that cool'},
-    {username: 'Dao Dy Mon', content: 'hello'},
-    {username: 'Do Hy Bin', content: 'good morning'},
-    {username: 'Ho Tran Hiu', content: 'how do you like the weather?'},
-    {username: 'Ma Vn Tai', content: 'good night'},
-    {username: 'Ng Low Bom', content: 'yes, its raining dogs, and cats'},
-    {username: 'La Thi Bay', content: 'I dont like cats, i like doggies'}
+    {username: 'admin', content: 'I have seen that, that cool'},
+    {username: 'admin1', content: 'hello'},
+    {username: 'admin2', content: 'good morning'},
+    {username: 'admin3', content: 'how do you like the weather?'},
+    {username: 'admin4', content: 'I dont like cats, i like doggies'},
+    {username: 'admin5', content: 'yes, its raining dogs, and cats'},
   ];
 
   addMessage(message: IMessage) {

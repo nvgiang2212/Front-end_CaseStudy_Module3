@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-all-message',
   templateUrl: './all-message.component.html',
-  styleUrls: ['./all-message.component.css']
+  styleUrls: ['./all-message.component.scss']
 })
 export class AllMessageComponent implements OnInit {
   messageList: IMessage[];

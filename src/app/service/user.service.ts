@@ -8,16 +8,17 @@ export class UserService {
   static STATUS_ONLINE = 'online';
   static STATUS_OFFLINE = 'offline';
   userList: IUser[] = [
-    {username: 'admin', password: 'admin', status: 'online'},
-    {username: 'admin1', password: 'admin1', status: 'online'},
-    {username: 'admin2', password: 'admin2', status: 'online'},
-    {username: 'admin3', password: 'admin3', status: 'offline'},
-    {username: 'admin4', password: 'admin4', status: 'offline'},
-    {username: 'admin5', password: 'admin5', status: 'offline'},
+    {username: 'admin', nickname: 'Andre Gomes', password: 'admin', status: 'online'},
+    {username: 'admin1', nickname: 'Christiano Ronaldo', password: 'admin1', status: 'online'},
+    {username: 'admin2', nickname: 'Ashley Young', password: 'admin2', status: 'online'},
+    {username: 'admin3', nickname: 'Nicholas PePe', password: 'admin3', status: 'offline'},
+    {username: 'admin4', nickname: 'Arturo Vidal', password: 'admin4', status: 'offline'},
+    {username: 'admin5', nickname: 'Jordan Anderson', password: 'admin5', status: 'offline'},
   ];
   loginUser: IUser = {
     username: 'admin',
     password: 'admin',
+    nickname: 'Andre Gomes',
     status: 'online'
   }; // Test login user
 

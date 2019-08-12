@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AllMessageComponent } from './all-message/all-message.component';
-import { GroupchatComponent } from './groupview/groupchat.component';
 import { HeaderComponent } from './header/header.component';
 import { NewMessageComponent } from './new-message/new-message.component';
 import { UserComponent } from './user/user.component';
@@ -18,7 +17,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   declarations: [
     AppComponent,
     AllMessageComponent,
-    GroupchatComponent,
     HeaderComponent,
     NewMessageComponent,
     UserComponent,
@@ -30,6 +28,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],

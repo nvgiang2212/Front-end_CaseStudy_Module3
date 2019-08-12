@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-import {IUser} from '../../model/user';
+import {IUser} from '../model/user';
 import {FormControl, FormGroup} from '@angular/forms';
-import {UserService} from '../../service/user.service';
-import {Router, Routes} from '@angular/router';
+import {UserService} from '../service/user.service';
+import {Router} from '@angular/router';
 import {Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-log-in',
   templateUrl: './log-in.component.html',
-  styleUrls: ['./log-in.component.css']
+  styleUrls: ['./log-in.component.scss']
 })
 export class LogInComponent implements OnInit {
 
@@ -25,6 +25,7 @@ export class LogInComponent implements OnInit {
     this.user = {
       username: this.loginUserForm.value.username,
       password: this.loginUserForm.value.password,
+      nickname: this.loginUserForm.value.nickname,
       status: 'offline',
     };
     console.log(this.loginUserForm);
